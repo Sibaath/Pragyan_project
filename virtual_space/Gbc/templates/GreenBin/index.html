@@ -2,110 +2,156 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!-- jQuery library -->
+
+  <!-- jQuery library -->
   <style>
-    .carousel-control-prev, .carousel-control-next{
+    .carousel-control-prev,
+    .carousel-control-next {
       margin-top: 230px;
       display: inline-block;
       width: fit-content;
       height: fit-content;
-      
+
     }
-    .carousel-control-prev{
+
+    .carousel-control-prev {
       margin-left: 40px;
     }
-    .carousel-control-next{
+
+    .carousel-control-next {
       margin-right: 40px;
     }
 
-    .carousel-control-prev:hover, .carousel-control-next:hover{
-      background-color: rgba(0,0,0,0);
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      background-color: rgba(0, 0, 0, 0);
       opacity: 1;
       color: white;
       font-size: 15px;
     }
   </style>
-    <!-- Latest compiled JavaScript -->
-    <title>Login-Form</title>
+  <!-- Latest compiled JavaScript -->
+  <title>Login-Form</title>
 </head>
 
 <body>
-    <header id="header">
-        <div class="logo"><a href="">GreenBin Connect
-            </a> </div>
-        <!-- <div class="hamburger" id="toggle">
+  <header id="header">
+    <div class="logo"><a href="">GreenBin Connect
+      </a> </div>
+    <!-- <div class="hamburger" id="toggle">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div> -->
-        <nav class="nav-bar1" id="navbar1">
-            <ul>
-                <li>
-                    <a href="index.html" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="#product">Products</a>
-                </li>
-                <li>
-                    <a href="#about">About Us</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <div class="login">
-                    <li>
-                        <a href="./login/" class="navlogin active">Login</a>
-                    </li>
-                </div>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <br><br>
-    <!-- <img class="mySlides" src="./img/bin3.jpg">
+    <nav class="nav-bar1" id="navbar1">
+      <ul>
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+          <a href="#product">Products</a>
+        </li>
+        <li>
+          <a href="#about">About Us</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <div class="login">
+          <li>
+            <a href="./login/" class="navlogin active">Login</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <br><br>
+  <!-- <img class="mySlides" src="./img/bin3.jpg">
     <img class="mySlides" src="./img/bin4.jpg">
     <img class="mySlides" src="./img/bin5.jpg"> -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/bin3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/bin4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/bin5.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bin3.jpg" class="d-block w-100" alt="...">
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <div class="carousel-item">
+        <img src="img/bin4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bin5.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <div id="about">
+    <h1>About</h1>
+    <hr style="color: purple;">
+    <h2 style="text-align: center;"><Strong>Welcome to GREENBIN CONNECT:</Strong> Revolutionizing Waste Management for a Sustainable Future</h2>
+    <br>
+    <p style="margin-left: 50px;margin-right: 50px;text-align: justify;font-size: 20PX;">At <strong>GREENBIN CONNECT</strong> , our mission is to spearhead a paradigm shift in waste management, tackling the pressing issues of overflowing landfills and environmental degradation. We are committed to ushering in a cleaner, more sustainable future through the strategic integration of cutting-edge technology into every facet of our waste management initiatives. <em><Strong>AI-Driven Trash Categorization:</Strong></em> 
+      Our commitment to efficiency begins with AI-powered trash categorization. Leveraging artificial intelligence, we accurately categorize waste, streamlining the recycling and disposal process. This not only enhances recycling efficiency but also contributes to a reduction in environmental impact. <em><strong>Real-Time Fill Level Monitoring:</strong></em> 
+      In our pursuit of optimal waste management, we implement real-time fill level monitoring. This technology allows us to dynamically optimize collection routes, minimizing unnecessary pickups. By doing so, we not only increase operational efficiency but also significantly decrease the carbon footprint associated with traditional waste collection methods. <em><Strong>Rewarding Responsible Practices:</Strong></em>
+      We believe in the power of positive reinforcement. GREENBIN CONNECT introduces a reward system to encourage responsible waste management practices. By participating in eco-friendly behaviors, individuals and communities earn incentives, fostering a sense of responsibility and community engagement. <em><Strong>Integrated GIS for Efficient Planning:</Strong></em>
+      Efficiency is at the core of our initiatives. Our waste management strategy incorporates <em>Geographic Information System (GIS)</em> technology to ensure optimal planning. By utilizing GIS, we minimize the environmental impact of waste collection, strategically planning routes for maximum efficiency.</p><br>
+      <h4 style="margin-left: 50px;margin-right: 50px;text-align: justify;text-align: center;">Join Us in Reimagining Trash for a Cleaner Tomorrow!</h4><br>
+      <h5 style="margin-left: 50px;margin-right: 50px;text-align: justify;"><strong>GREENBIN CONNECT</strong> invites you to join us in reshaping the narrative on waste management. Together, we can pave the way for a cleaner, more sustainable future. Whether you're an individual committed to responsible waste practices or an organization seeking innovative waste solutions, your partnership is crucial in our journey toward a greener planet.</h5>
+      <h5 style="margin-left: 50px;margin-right: 50px;text-align: justify;">
+        Embrace the future of waste management with GREENBIN CONNECT – where technology meets sustainability for a cleaner world. Together, let's redefine how we handle waste and make a lasting positive impact on our ecosystems.</h5>
+  </div>
+  <br><br>
+  <div id="contact">
+  <h1>Contact</h1>
+  <hr>
+  <a href="tel: +917010407827" style="text-decoration: none;">
+    <i class="fa fa-phone"></i>
+    <span class="nav-item">+91 7010407827</span>
+  </a><br>
+  <a href="mailto:greenbintce@gmail.com" style="text-decoration: none;">
+    <i class="fa fa-google"></i>
+    <span class="nav-item">greenbintce@gmail.com</span>
+  </a><br>
+  <a href="" style="text-decoration: none;">
+    <i class="fa fa-map-marker"></i>
+    <span class="nav-item">Madurai</span>
+  </a>
+  </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
 
 
