@@ -24,114 +24,56 @@ header{
     padding: 0 100px;
     padding-top: 2px;
 }
-.card{
-    /* border: 1px black solid; */
-    width: 400px;
-    display: inline-block;
-    /* border-radius: 10px; */
-    /* background-color: rgb(244, 226, 226); */
-    margin-left: 10px;
-    margin-bottom: 10px ;
-}
-.cards{
-    text-align: center;
-    /* padding: 10px; */
-}
+
 img{
     width: 100%;
     height: 500px;
 }
 
-@keyframes progress {
-    0% { --percentage: 0; }
-    100% { --percentage: var(--value); }
-  }
-  
-  @property --percentage {
-    syntax: '<number>';
-    inherits: true;
-    initial-value: 0;
-  }
-  
-  [role="progressbar"] {
-    --percentage: var(--value);
-    --primary: #369;
-    --secondary: #adf;
-    --size: 300px;
-    animation: progress 2s 0.5s forwards;
-    width: var(--size);
-    aspect-ratio: 1;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    place-items: center;
-  }
-  
-  [role="progressbar"]::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
-    mask: radial-gradient(white 55%, transparent 0);
-    mask-mode: alpha;
-    -webkit-mask: radial-gradient(#0000 55%, #000 0);
-    -webkit-mask-mode: alpha;
-  }
-  
-  [role="progressbar"]::after {
-    counter-reset: percentage var(--value);
-    content: counter(percentage) '%';
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: calc(var(--size) / 5);
-    color: var(--primary);
-  }
-  
 
   
 header .logo a{
     font-size: 30px;
     font-weight: bold;
-    color: black;
+    color: rgb(207, 10, 207);
 }
-.hamburger{
-    display: none;
-    cursor: pointer;
-}
-.nav-bar ul{
+
+.nav-bar1 ul{
     display: flex;
 }
-.nav-bar ul li a {
+.nav-bar1 ul li a {
     display: block;
-    color: black;
+    color:  rgb(207, 10, 207);
     font-size: 20px;
     padding: 10px 25px;
     border-radius: 50px;
     transition: .2s;
 }
-.nav-bar ul li a:hover{
-    color: black;
-    background: #eee;
+.nav-bar1 ul li a:hover{
+    color:  rgb(207, 10, 207);
+    background:  rgb(240, 232, 224);
+    font-size: 22px;
+    transition-duration: .2s;
 }
-.nav-bar ul li a.active{
-    background-color: #eee;
+.nav-bar1 ul li a.active{
+    background-color: rgb(240, 232, 224);
 }
 .login{
     padding-left: 20px;
 }
-.nav-bar ul li a.navlogin{
+.nav-bar1 ul li a.navlogin{
     color: #eee;
-    background-color: #11101b;
+    background-color: rgb(207, 10, 207);
     transition: .5s;
 }
-.nav-bar ul li a.navlogin:hover{
+.nav-bar1 ul li a.navlogin:hover{
     background-color: #eee;
-    color: black;
+    color:  rgb(207, 10, 207);
 }
-.container{
+.nav-bar1 a, .logo a{
+    text-decoration: none;
+}
+/* .container{
     min-height: calc(100vh - 40px * 2);
     display: grid;
     grid-template-columns: 50% 50%;
@@ -270,123 +212,4 @@ button:hover{
 ::placeholder{
     color: grey;
     font-size: 1rem;
-}
-/* optimisaton for low res devices */
-
-@media(max-width:1300px){
-    header{
-        position: 0 50px;
-    }
-    .login-left{
-        padding: 50px !important;
-    }
-    .login-right{
-        width: 500px;
-    }
-    .login-form{
-        width:100%;
-    }
-    .login-footer{
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-@media(max-width:1100px){
-    header{
-        padding: 0 30px;
-    }
-    .login-right{
-        width: 400px;
-    }
-}
-@media(max-width:900px){
-    .login-header h1{
-        font-size: 25px;
-    }
-    .login-header p{
-        font-size: 16px;
-    }
-    .login-right{
-        width: 400px;
-    }
-    .container.active{
-        filter: blur();
-    }
-    .container.active{
-        filter: blur(15px);
-    }
-    .hamburger{
-        display: block;
-        z-index: 99999;
-    }
-    .hamburger .line{
-        width: 30px;
-        height: 3px;
-        background: black;
-        margin: 6px 0;
-        /* z-index: 999; */
-        cursor: pointer;
-    }
-    .nav-bar{
-        height: 0;
-        position: absolute;
-        top: 90px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        z-index: 999;
-        transition: .5;
-        overflow: hidden;
-    }
-    .nav-bar.active{
-        height: 800px;
-    }
-    .nav-bar ul{
-        display: block;
-        width: fit-content;
-        margin: 160px auto 0 auto;
-        text-align: center;
-        transition: .5s;
-        opacity: 0;
-    }
-    .nav-bar.active ul{
-        opacity: 1;
-        transition: .5;
-    }
-    .nav-bar ul li a {
-        display: block;
-        color: black;
-        margin-top: 40px;
-        font-size: 25px;
-        font-weight: 900;
-        margin-bottom: 12px;
-    }
-    }
-@media(max-width:768px){
-    .login-header h1{
-        font-size: 30px;
-    }
-    body{
-        padding: 20px;
-    }
-    .container{
-        grid-template-columns: auto;
-    }
-    .login-right{
-        display: none;
-    }
-}
-
-
-/* 
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 300px;
-}
-
-.cards{
-    display: f;
 } */
