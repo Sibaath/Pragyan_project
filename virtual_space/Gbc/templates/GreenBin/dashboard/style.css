@@ -1,110 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
 *{
-  margin: 0px;
+  margin: 0;
   padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-header{
-  background-color: rgb(207, 10, 207);
-  margin: 0px;
+body{
+  background: #dfe9f5;
 }
-
-
+.container{
+  display: flex;
+}
+i,.nav-item{
+  color: whitesmoke;
+}
 nav{
-    /* border: 1px solid black; */
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(207, 10, 207);
-    color: whitesmoke;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: rgb(207, 10, 207);
+  color:whitesmoke;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
-h1{
-    display: inline;
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
 }
-.icons{
-    display: flex;
-    flex-direction: row-reverse;
-    column-gap: 10px;
-    position:absolute;
-    margin-top: -30px;
-    position: relative;
-    margin-left: 85%;
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
-
-
-#id{
-flex-direction: row;
-margin-left: 1000px;
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
-
 a{
-    text-decoration: none;
-    color: whitesmoke;
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  /* background: #eee; */
+  background: rgba(245, 191, 245,0.6);
+
+
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+.main{
+  margin-left:250px;
+  margin-top: -900px;
+  color: rgb(207, 10, 207);
+
 }
 
 .cont{
-    width: 100%;
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    column-gap: 25px;
-    row-gap: 25px;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  column-gap: 25px;
+  row-gap: 25px;
+  flex-wrap: wrap;
 }
 .card{
-    padding: 20px;
-    border: 1px solid rgb(207, 10, 207);
-    border-radius: 20px;
-    text-align: center;
+  padding: 20px;
+  border: 2px solid rgb(207, 10, 207);
+  border-radius: 20px;
+  text-align: center;
 }
 
 .card:hover{
-    z-index: 200px;
-    box-shadow:10px 10px 5px lightblue;
+  z-index: 200px;
+  box-shadow:10px 10px 5px rgb(242, 191, 242);
 }
 
 @keyframes progress {
-    0% { --percentage: 0; }
-    100% { --percentage: var(--value); }
-  }
-  
-  @property --percentage {
-    syntax: '<number>';
-    inherits: true;
-    initial-value: 0;
-  }
-  
-  [role="progressbar"] {
-    --percentage: var(--value);
-    --primary: #369;
-    --secondary: #adf;
-    --size: 300px;
-    animation: progress 2s 0.5s forwards;
-    width: var(--size);
-    aspect-ratio: 1;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    place-items: center;
-  }
-  
-  [role="progressbar"]::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
-    mask: radial-gradient(white 55%, transparent 0);
-    mask-mode: alpha;
-    -webkit-mask: radial-gradient(#0000 55%, #000 0);
-    -webkit-mask-mode: alpha;
-  }
-  
-  [role="progressbar"]::after {
-    counter-reset: percentage var(--value);
-    content: counter(percentage) '%';
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: calc(var(--size) / 5);
-    color: var(--primary);
-  }
-  
+  0% { --percentage: 0; }
+  100% { --percentage: var(--value); }
+}
+
+@property --percentage {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+[role="progressbar"] {
+  --percentage: var(--value);
+  --size: 300px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.deg [role="progressbar"]{
+  --primary: green;
+  --secondary: rgb(201, 244, 201);
+}
+
+.nondeg [role="progressbar"]{
+  --primary:rgb(135, 4, 4);
+  --secondary:rgb(243, 169, 169);
+}
+
+[role="progressbar"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+[role="progressbar"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}

@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Dashboard | By Code Info</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-        <h1 id="Logo">GreenBin Connect</h1>
-        <div class="icons">
-            <a href="../Login/login.htm"><h1><i class="fa fa-user"></i></h1></a>
-            <a href="../index.html"><h1><i class="fa fa-home"></i></h1></a>
-            <a href=""><h1><i class="fas fa-map-marker"></i></h1></a>
-            <a href=""><h1><i class="fas fa-chart-bar"></i></h1></a>
-            <a href=""><h1><i class="fas fa-question-circle"></i></h1></a>
-            <a href=""><h1><i class="fas fa-sign-out-alt"></i></h1></a>
-
-
-
-        </div>  
-    </nav>`
-    </header>
-    
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="/logo.jpg" alt="">
+          <span class="nav-item">DashBoard</span>
+        </a></li>
+        <!-- <li><a href="#">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li> -->
+        <li><a href="">
+          <i class="fas fa-user"></i>
+          <span class="nav-item">Profile</span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-map-marker"></i>
+          <span class="nav-item">Location</span>
+        </a></li>
+        <li><a href="#analytics">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Analytics</span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-key"></i>
+          <span class="nav-item">Change Password</span>
+        </a></li>
+        <li><a href="">
+          <i class="fas fa-question-circle"></i>
+          <span class="nav-item">Help</span>
+        </a></li>
+        <li><a href="" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main" id="analytics">
+    <h1 style="margin-left: 250px;">Bin Level</h1>
+    <hr>
     <div class="cont">
-        <div class="card">
-            <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 69"></div>
-            <p>Your Bin Level</p>
+      <div class="card">
+        <div class="deg">
+          <h3>Biodegradable</h3><br>
+          <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 69"></div>
         </div>
-        <div class="card">
-            <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 69"></div>
-            <p>Your Bin Level</p>
+      </div>
+      <div class="card">
+        <div class="nondeg">
+          <h3>Non-Biodegradable</h3><br>
+          <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 69"></div>
         </div>
-    </div>
-    <script src="indes.js"></script>
+      </div>
+  </div>
+  </div>
+ 
 </body>
 </html>
