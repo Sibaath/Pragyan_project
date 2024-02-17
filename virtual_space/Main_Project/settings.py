@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z*0v=w5xr_$fzp0z03%(c1(_1eu77g=evz3o55_*r2g^t1^=s!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# settings.py
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+# 
+
 
 
 # Application definition
@@ -37,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Gbc'
+    'Gbc',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +80,12 @@ WSGI_APPLICATION = 'Main_Project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Pragyan_project',
+        'USER': 'root',
+        'PASSWORD': 'sibaath@2004',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
